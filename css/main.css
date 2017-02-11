@@ -1861,15 +1861,15 @@ object {
 .contact-container {
     height: 100vh;
     width: 100vw;
-    
+    background-color: #aaccc2;
     overflow-x: hidden;
 }
 
 .contact-intro {
-    height: 100%;
-    width: 100%;
+    /*height: 100%;
+    width: 100%;*/
     
-    background-color: #aaccc2;
+    
 }
 
 .contact-wrap {
