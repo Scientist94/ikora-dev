@@ -223,7 +223,7 @@ nav li a {
     text-decoration: none;
     display: block;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.23vw;
     opacity: 0;
 }
 
@@ -1859,10 +1859,10 @@ object {
 
 
 .contact-container {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .contact-intro {
@@ -1874,7 +1874,7 @@ object {
 
 .contact-wrap {
     padding: 10vw 0 3vw 0;
-    height: 100%;
+    
     width: 80%; 
     margin: 0 auto;
     
@@ -1897,7 +1897,7 @@ object {
     padding: 0;
 }
 
- option {
+option {
     text-align: center;
     background-color: #aaccc2;
     border: none;
@@ -1943,16 +1943,6 @@ object {
 }
 
 
-/* custom field (drop-down, text element) styling  */
-
-.nl-field {
-    display: inline-block;
-    position: relative;
-}
-
-
-
-
 /* the toggle is the visible part in the form */
 
 
@@ -1980,6 +1970,7 @@ object {
 
 
 /* custom placeholder color */
+
 
 
 
@@ -2022,7 +2013,7 @@ object {
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.16vw;
 }
 
 .mail-text-wrap p a {
@@ -2055,6 +2046,204 @@ object {
 .social-svg svg {
     height: 100%;
     width: 100%;
+
+}
+
+
+
+#fb_icon .fb_hover:hover {
+    fill: #3b5998;
+}
+
+#insta_icon .insta_hover:hover {
+    fill: #fbad50;
+}
+
+#google_icon .google_hover:hover {
+    fill: #3cba54;
+}
+
+#twitter_icon .twitter_hover:hover {
+    fill: #4099ff;
+}
+
+
+@media only screen and (min-width: 1366px) and (max-height: 750px) {
+    
+    .contact-social {
+    
+        margin: 0 auto;
+        width: 400px;
+        height: 110px;
+        
+    }
+
+    .social-svg {
+        height: 110px;
+        width: 100%;
+
+    }
+
+}
+
+@media only screen and (max-width: 1366px) {
+    
+    .contact-wrap {
+        padding: 18vw 0 4vw 0;
+        
+    }
+
+    .contact-social {
+    
+        margin: 0 auto;
+        width: 400px;
+        height: 110px;
+        
+    }
+
+    .social-svg {
+        height: 110px;
+        width: 100%;
+
+    }
+    
+
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    .contact-wrap {
+        padding: 22vw 0 8vw 0;
+        
+    }
+
+    .nl-form {    
+        width: 95%;
+        margin: 0 auto;
+        font-size: 2.4vw;
+       
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.5;
+        color: #7d786f;
+        text-align: center;
+    }
+
+    .mail-text {
+        padding-top: 3%;
+        width: 75%;
+        margin: 0 auto;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        font-size: 1.32vw;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 980px) {
+    
+    .contact-wrap {
+        padding: 22vw 0 8vw 0;
+        
+    }
+
+    .nl-form {    
+        width: 95%;
+        margin: 0 auto;
+        font-size: 2.4vw;
+       
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.5;
+        color: #7d786f;
+        text-align: center;
+    }
+
+    .mail-text {
+        padding-top: 3%;
+        width: 75%;
+        margin: 0 auto;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        font-size: 1.32vw;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .contact-wrap {
+        padding: 22vw 0 8vw 0;
+        
+    }
+
+    .nl-form {    
+        width: 95%;
+        margin: 0 auto;
+        font-size: 2.4vw;
+       
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.5;
+        color: #7d786f;
+        text-align: center;
+    }
+
+    .mail-text {
+        padding-top: 3%;
+        width: 75%;
+        margin: 0 auto;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        font-size: 1.32vw;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 359px) {
+    
+    .contact-wrap {
+        padding: 29vw 0 8vw 0;
+        
+    }
+
+    .nl-form {    
+        width: 95%;
+        margin: 0 auto;
+        font-size: 3.4vw;
+       
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.5;
+        color: #7d786f;
+        text-align: center;
+    }
+
+    .mail-text {
+        padding-top: 3%;
+        width: 75%;
+        margin: 0 auto;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        font-size: 1.9vw;
+    }
+    
+    .contact-social {
+    
+        margin: 0 auto;
+        width: 240px;
+        height: 90px;
+        
+    }
+
+    .social-svg {
+        height: 90px;
+        width: 100%;
+
+    }
+    
 
 }
 
