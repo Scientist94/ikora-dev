@@ -1017,10 +1017,14 @@ section.about-detail .detail-wrap .about-detail-list {
 
 }
 
+.svg_mob {
+    display: none;
+}
 
+/*
 object {
     pointer-events: none;
-}
+}*/
 
 .intro-section {
     height: 100%;
@@ -1273,6 +1277,21 @@ object {
         display: none;
     }*/
 
+}
+
+@media only screen and (max-width: 640px) {
+
+   .info {
+        flex: 0 0 384px;
+    }
+
+    .info .info-svg {
+        position: absolute;
+        bottom: 0;
+        height: 216px;
+        width: 384px;
+
+    }
 }
 
 
