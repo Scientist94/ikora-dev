@@ -2191,27 +2191,31 @@ option {
     height: 100%;
     width: 100%;
     position: relative;
-    
+    display: flex;
+    justify-content: center;
 }
 
 .easel {
-    position: absolute;
-    bottom: 0;
-    height: 765px;
-    width: 1360px;
+    align-self: flex-end;
+    width: 1280px;
+    height: 720px;
+    
 }
 
 .easel-svg {
-
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
-.easel-svg svg #canvas text {
-    font-family: 'Josefin Sans', sans-serif
+.easel-svg svg {
+    position: absolute;
+    bottom: 0;
 }
 
-#cta_link:hover {
+
+.easel-svg #works_lg #CTA_1:hover {
+    
     cursor: pointer;
 }
 
@@ -2219,7 +2223,8 @@ option {
     display: none;
 }
 
-@media (max-width: 1280px) {
+@media only screen and (max-width: 1024px) {
+
     #works_lg {
         display: none;
     }
@@ -2229,11 +2234,27 @@ option {
     }
 
     .easel {
-        position: absolute;
-        bottom: 0;
-        height: 1360px;
-        width: 765px;
+        width: 720px;
+        height: 1024px;
     }
 }
+
+@media only screen and (max-width: 1024px) and (orientation:landscape) {
+
+    #works_lg {
+        display: block;
+    }
+
+    #works_md {
+        display: none;
+    }
+
+    .easel {
+        width: 1280px;
+        height: 720px;
+    }
+}
+
+
 
 /* WORKS STYLES END */
