@@ -100,9 +100,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;    
 }
 
+.logo-wrapper:hover {
+    box-shadow: 4px 4px 14px -1px rgba(75,94,24,1);
+}
+
 .content-wrapper {    
     height: 100%;
 }
+
+
  
 @media (max-width: 1156px) {
     .header-wrapper {
@@ -115,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 }
 
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     .header-wrapper {
     height: 108px;
     width: 108px;    
@@ -126,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .header-wrapper {
     height: 96px;
     width: 96px;    
@@ -137,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 }
 
-@media (max-width: 640px) {
+@media only screen and (max-width: 640px) {
     .header-wrapper {
     height: 80px;
     width: 80px;    
@@ -148,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .header-wrapper {
     height: 72px;
     width: 72px;    
@@ -268,7 +274,7 @@ nav li:nth-of-type(4) {
     background-color: #f4837d;
 }
 
-@media (max-width: 640px) {
+@media only screen and (max-width: 640px) {
     nav ul {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -318,7 +324,7 @@ nav li:nth-of-type(4) {
     margin-top: 6px;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .open-overlay {   
         position: fixed;
         top: 50px;
@@ -330,7 +336,7 @@ nav li:nth-of-type(4) {
     }
 }
 
-@media (max-width: 640px) {
+@media only screen and (max-width: 640px) {
     .open-overlay {   
         position: fixed;
         top: 6.8vh;
@@ -342,7 +348,7 @@ nav li:nth-of-type(4) {
     }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .open-overlay {   
         position: fixed;
         top: 4vh;
@@ -354,7 +360,7 @@ nav li:nth-of-type(4) {
     }
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
     .open-overlay {   
         position: fixed;
         top: 4.2vh;
@@ -1081,6 +1087,10 @@ object {
     color: #915151;
 }
 
+.vision-landscape {
+    display: none;
+}
+
 @media only screen and (min-width: 2200px) {
     
     .info .scene-container {
@@ -1613,6 +1623,30 @@ object {
 
 }
 
+@media only screen and (max-width: 768px) and (orientation:landscape) {
+
+    .vision-wrap {
+        display: none;
+    }
+
+    .vision-landscape {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .landscape-text {
+        align-self: center;
+    }
+
+    .landscape-text h2 {
+        font-size: 3vw;
+        font-family: 'Raleway', sans-serif;
+    }
+
+}
 
 
 @media only screen and (max-width: 640px) {
@@ -1688,6 +1722,31 @@ object {
     }
 }
 
+@media only screen and (max-width: 640px) and (orientation:landscape) {
+
+    .vision-wrap {
+        display: none;
+    }
+
+    .vision-landscape {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .landscape-text {
+        align-self: center;
+    }
+
+    .landscape-text h2 {
+        font-size: 3vw;
+        font-family: 'Raleway', sans-serif;
+    }
+
+}
+
 @media only screen and (max-width: 480px) {
 
     .vision-intro-text h1 {
@@ -1758,6 +1817,31 @@ object {
         height: 234px;
         width: 416px;
 
+    }
+
+}
+
+@media only screen and (max-width: 480px) and (orientation:landscape) {
+
+    .vision-wrap {
+        display: none;
+    }
+
+    .vision-landscape {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .landscape-text {
+        align-self: center;
+    }
+
+    .landscape-text h2 {
+        font-size: 3vw;
+        font-family: 'Raleway', sans-serif;
     }
 
 }
@@ -2250,8 +2334,8 @@ option {
     }
 
     .easel {
-        width: 1280px;
-        height: 720px;
+        width: 896px;
+        height: 504px;
     }
 }
 
