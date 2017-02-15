@@ -1,8 +1,8 @@
 
-if($(window).width() > 1024) {
+ if($(window).width() > 1024) {
 	(function() {
 
-	var ctrl = new ScrollMagic.Controller({container:"body", vertical: false});
+	var ctrl = new ScrollMagic.Controller({container:"#vision-container", vertical: false});
 	
 	//headers
 	// var $disc_head = $("#disc_head");
@@ -37,9 +37,9 @@ if($(window).width() > 1024) {
 	});
 
 	var introTl = new TimelineMax();
-	var introTween = TweenMax.from(".vision-intro-text h1", 1.2, {
-		y: 125,
-		opacity: 0,
+	var introTween = TweenMax.to(".vision-intro-text h1", 2.2, {
+		
+		opacity: 1,
 		ease: Sine.easeInOut
 	});
 	var scrollTween = TweenMax.from(".scroll-container", 0.45, {
