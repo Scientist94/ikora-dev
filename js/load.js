@@ -16,24 +16,27 @@ $(document).ready(function() {
 
 	var loadTl = new TimelineMax({
 		onComplete: function() {
-			$(".loader-wrapper").fadeOut(850);
+			$(".loader-wrapper").fadeOut(550);
 		}
 	});
 	//console.log(loadTl);
 
-	loadTl.from($ground, 0.7, {y:-25, opacity: 0, ease: Sine.easeIn})
-		  .from($house, 0.75, {y:-25, opacity: 0, ease: Sine.easeIn})
-		  .from($fence, 0.6, {y:-25, opacity: 0, ease: Sine.easeIn})
-		  .from($triangle, 0.2, {opacity: 0, ease: Sine.easeIn})
-		  .from($sky1, 0.7, {y:25, opacity: 0, ease: Sine.easeIn})
-		  .from($sky2, 0.7, {y:25, opacity: 0, ease: Sine.easeIn})
-		  .from($sky3, 0.7, {y:25, opacity: 0, ease: Sine.easeIn})
-		  .from($sun, 0.7, {y:25, opacity: 0, ease: Sine.easeIn})
+	// var loadTl = new TimelineMax();
+
+	loadTl.to($loadSvg, 0.1, {opacity: 1})
+		  .fromTo($ground, 0.5, {y:-25}, {y:0, opacity: 1, ease: Sine.easeIn})
+		  .fromTo($house, 0.65, {y:-25}, {y:0, opacity: 1, ease: Sine.easeIn})
+		  .fromTo($fence, 0.4, {y:-25}, {y:0, opacity: 1, ease: Sine.easeIn})
+		  .to($triangle, 0.2, {opacity: 1, ease: Sine.easeIn})
+		  .fromTo($sky1, 0.55, {y:25}, {y:0, opacity: 1, ease: Sine.easeIn})
+		  .fromTo($sky2, 0.55, {y:25}, {y:0, opacity: 1, ease: Sine.easeIn})
+		  .fromTo($sky3, 0.55, {y:25}, {y:0, opacity: 1, ease: Sine.easeIn})
+		  .fromTo($sun, 0.45, {y:25}, {y:0, opacity: 1, ease: Sine.easeIn})
 		  .add("sun")
-		  .from($shadow, 0.7, {opacity: 0, ease:Sine.easeIn}, "sun-=0.5")
-		  .from($text, 0.7, {y:-25, opacity: 0, ease: Sine.easeIn})
+		  .to($shadow, 0.45, {opacity: 1, ease:Sine.easeIn}, "sun-=0.5")
+		  .fromTo($text, 0.65, {y:-25}, {y:0, opacity: 1, ease: Sine.easeIn})
 
-
+	// loadTl.play();
 
 
 });
