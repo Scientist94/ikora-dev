@@ -523,10 +523,10 @@ nav li:nth-of-type(4) {
 }
 
 .loader-container {
-    
+   
     align-self: center;
-    height: 480px;
-    width: 480px;
+    height: 540px;
+    width: 540px;
 }
 
 .loader-svg {
@@ -586,32 +586,32 @@ nav li:nth-of-type(4) {
 @media only screen and (max-width: 1024px) {
 
     .loader-container {
-        height: 320px;
-        width: 320px;
+        height: 480px;
+        width: 480px;
     }
 }
 
 @media only screen and (max-width: 768px) {
 
     .loader-container {
-        height: 240px;
-        width: 240px;
+        height: 360px;
+        width: 360px;
     }
 }
 
 @media only screen and (max-width: 640px) {
 
     .loader-container {
-        height: 170px;
-        width: 170px;
+        height: 300px;
+        width: 300px;
     }
 }
 
 @media only screen and (max-width: 480px) {
 
     .loader-container {
-        height: 120px;
-        width: 120px;
+        height: 250px;
+        width: 250px;
     }
 }
 

@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 	var loadTl = new TimelineMax({
 		onComplete: function() {
-			$(".loader-wrapper").fadeOut(550);
+			$(".loader-wrapper").fadeOut(750);
 		}
 	});
 	//console.log(loadTl);
