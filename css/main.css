@@ -523,7 +523,7 @@ nav li:nth-of-type(4) {
 }
 
 .loader-container {
-    position: fixed;
+    
     align-self: center;
     height: 480px;
     width: 480px;
