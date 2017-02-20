@@ -875,7 +875,7 @@ nav li:nth-of-type(4) {
 
 .about-intro-text {
     opacity: 0;
-    flex: 0 0 75%;
+    flex: 0 0 80%;
 }
 
 .about-intro-text h1 {
@@ -884,7 +884,7 @@ nav li:nth-of-type(4) {
     font-family: 'Raleway', sans-serif;
     color: #d8e1ef;
     
-    font-size: 3em;
+    font-size: 3.2em;
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0;
@@ -894,8 +894,8 @@ nav li:nth-of-type(4) {
 
 .about-detail {
     padding: 12vw 0 8vw 0;
-    /*height: 50%;
-    height: 50vh;*/
+    height: 50%;
+    height: 50vh;
     display: flex;
     width: 100%;
     width: 100vw;
@@ -962,8 +962,6 @@ section.about-detail .detail-wrap .about-detail-list {
 .team-wrap {
        
     height: 100%;  
-    display: flex; 
-    justify-content: center;  
     
 
 }
@@ -971,7 +969,15 @@ section.about-detail .detail-wrap .about-detail-list {
 .team-wrap .team-svg {
     height: 100%;
     width: 100%;
-    
+    position: relative;   
+}
+
+.team-svg svg {
+    /*height: 792px;
+    width: 1408px;*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .team-wrap .team-svg  #crew-svg-sm {
@@ -1014,11 +1020,19 @@ section.about-detail .detail-wrap .about-detail-list {
     }
 
     .about-detail-text h3 {
-        font-size: 2.3vw;
+        font-size: 3.6vw;
+    }
+    
+    .about-detail-list ul {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 60%;
+        margin: 0;
     }
 
+
     .about-detail-list ul li{
-        font-size: 1.6vw;
+        font-size: 2.5vw;
     }
 
     .about-detail {
@@ -1093,6 +1107,9 @@ section.about-detail .detail-wrap .about-detail-list {
         line-height: 1.2;
         letter-spacing: 0;
     }
+    .detail-wrap {
+        
+    }
 
     .about-detail-list ul {
         display: flex;
@@ -1104,14 +1121,14 @@ section.about-detail .detail-wrap .about-detail-list {
     .about-detail-list ul li {
         display: inline-block;
         font-size: 24px; 
-        font-size: 1.9vw;
+        font-size: 2.9vw;
         font-weight: 400;
         
         padding: 0 1em;
     }
 
     .about-detail-text h3 {
-        font-size: 2.3vw;
+        font-size: 4.5vw;
     }
 
     .about-detail {
@@ -1156,14 +1173,14 @@ section.about-detail .detail-wrap .about-detail-list {
     .about-detail-list ul li {
         display: inline-block;
         font-size: 24px; 
-        font-size: 1.5vmax;
+        font-size: 2.9vw;
         font-weight: 400;
         
         padding: 0 1em;
     }
 
     .about-detail-text h3 {
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
 
     .about-detail {
@@ -1835,7 +1852,7 @@ object {
     }
 
     .info .scene-wrap {
-        padding-top: 15%;
+        padding-top: 12%;
         height: 100%;
         position: relative;
     }
@@ -1875,14 +1892,14 @@ object {
     }
 
    .info {
-        flex: 0 0 1152px;
+        flex: 0 0 1088px;
     }
 
     .info .info-svg {
         position: absolute;
         bottom: 0;
-        height: 648px;
-        width: 1152px;
+        height: 612px;
+        width: 1088px;
 
     }
 
@@ -2176,14 +2193,14 @@ object {
     
     
     .info {
-        flex: 0 0 512px;
+        flex: 0 0 384px;
     }
 
     .info .info-svg {
         position: absolute;
         bottom: 0;
-        height: 288px;
-        width: 512px;
+        height: 216px;
+        width: 384px;
 
     }
 

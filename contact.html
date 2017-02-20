@@ -336,9 +336,9 @@
             <div class="contact-container">
                 <div class="contact-intro">
                     <div class="contact-wrap">
-                        <form id="nl-form" class="nl-form">
+                        <form id="nl-form" class="nl-form" action="https://formspree.io/ikoraghor@gmail.com" method="POST">
                         Hi, I have  
-                        <select class="select-1" id="to_be_resized">
+                        <select class="select-1" id="to_be_resized" name="type">
                             <option value="1" >a project</option>
                             <option value="2" >a business</option>
                             <option value="3" >an idea</option>
@@ -347,7 +347,7 @@
                             <option id="compute_option"></option>
                         </select>
                          that I want to convert into a vivid individuality, and I would like to get in touch with you guys for your 
-                        <select class="select-2" id="to_be_resized2">
+                        <select class="select-2" id="to_be_resized2" name="service_type">
                             <option value="1" selected>Web Design</option>
                             <option value="2">Graphic Design</option>
                             <option value="3">Front-End Web Development</option>
@@ -362,12 +362,12 @@
                         <br>
                         My name is
                         <div class="resizing-input" style="display: inline-block;">
-                            <input type="text" class="expanding" value="" placeholder="(your name)" data-subline="For example: <em>John Doe</em>" required /> 
+                            <input type="text" class="expanding" value="" placeholder="(your name)" name="Name_client" required /> 
                             <span  style="display:none"></span>
                         </div>
                         and you can reach me at
                         <div class="resizing-input" style="display: inline-block;">
-                            <input type="email" class="expanding" value="" placeholder="(mail Id)"  required />
+                            <input type="email" class="expanding" value="" placeholder="(mail Id)" name="email_client"  required />
                             <span  style="display:none"></span>
                         </div>
                         <br>
