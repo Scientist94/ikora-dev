@@ -2,14 +2,7 @@ $(document).ready(function() {
 
 
 	var ctrl = new ScrollMagic.Controller();
-	var introText = new TweenMax.fromTo("#intro-text", 1.5, {
-		y: 100,
-		opacity: 0
-	}, {
-		y : 0,
-		opacity: 1,
-		ease: Power2.easeInOut
-	});
+	var introText = new TweenMax.fromTo("#intro-text", 0.7, {y:45}, {y:0, opacity: 1, ease: Sine.easeIn});
 
 	var aboutDetail = new TweenMax.fromTo("#detail-wrap", 1.5 ,{
 		y: 60,
@@ -52,7 +45,7 @@ $(document).ready(function() {
 		reverse: true
 	})
 	.setTween(introText)
-	.addIndicators()
+	// .addIndicators()
 	.addTo(ctrl);
 
 	var detailScene = new ScrollMagic.Scene({
@@ -60,7 +53,7 @@ $(document).ready(function() {
 		triggerHook: 0.76
 	})
 	.setTween(aboutDetail)
-	.addIndicators()
+	// .addIndicators()
 	.addTo(ctrl);
 
 	var teamScene = new ScrollMagic.Scene({
@@ -68,7 +61,7 @@ $(document).ready(function() {
 		triggerHook: 0.6
 	})
 	.setTween(teamTl)
-	.addIndicators()
+	// .addIndicators()
 	.addTo(ctrl);
 
 });

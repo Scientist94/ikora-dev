@@ -1,5 +1,10 @@
      
 (function() {
+
+    
+    
+
+
     $('.open-overlay').click(function () {
         $('.open-overlay').css('pointer-events', 'none');
         var overlay_navigation = $('.overlay-navigation'),
@@ -7,12 +12,20 @@
             middle_bar = $('.bar-middle'),
             bottom_bar = $('.bar-bottom');
 
-        overlay_navigation.toggleClass('overlay-active');
-        if (overlay_navigation.hasClass('overlay-active')) {
+        // var navTl = new TimelineMax({paused:true, reversed: true});
+        // navTl.add(TweenMax.to(middle_bar, 0.2, {x:10, opacity:0,ease: Sine.easeOut}))
+        //      .add("nav_bar")
+        //      .add(TweenMax.to(top_bar, 0.2, {y: 5, backgroundColor: "white"}), "nav_bar-=0.2")
+        //      .add(TweenMax.to(bottom_bar, 0.2, {y:-5, backgroundColor: "white"}), "nav_bar-=0.2");
 
-            top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
-            middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar');
-            bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
+        //      navTl.reversed() ? navTl.play() : navTl.reverse();
+
+        overlay_navigation.toggleClass('overlay-active');
+        if (overlay_navigation.hasClass('overlay-active')) {            
+            
+
+            
+            
             overlay_navigation.removeClass('overlay-slide-up').addClass('overlay-slide-down')
             overlay_navigation.velocity('transition.slideLeftIn', {
                 duration: 300,
@@ -35,10 +48,12 @@
             })
 
         } else {
+
+
             $('.open-overlay').css('pointer-events', 'none');
-            top_bar.removeClass('animate-top-bar').addClass('animate-out-top-bar');
-            middle_bar.removeClass('animate-middle-bar').addClass('animate-out-middle-bar');
-            bottom_bar.removeClass('animate-bottom-bar').addClass('animate-out-bottom-bar');
+            
+
+            // navTl.reversed() ? navTl.play() : navTl.reverse();
             overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up')
             $('nav ul li').velocity('transition.perspectiveRightOut', {
                 stagger: 150,

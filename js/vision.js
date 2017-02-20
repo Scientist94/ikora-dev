@@ -37,11 +37,7 @@
 	});
 
 	var introTl = new TimelineMax();
-	var introTween = TweenMax.to(".vision-intro-text h1", 2.2, {
-		
-		opacity: 1,
-		ease: Sine.easeInOut
-	});
+	var introTween = TweenMax.fromTo(".vision-intro-text h1", 0.7, {y:40}, {y:0, opacity: 1, ease: Sine.easeIn});
 	var scrollTween = TweenMax.from(".scroll-container", 0.45, {
 		x: 45,
 		opacity: 0,
@@ -60,7 +56,8 @@
 
 	var scene_1 = new ScrollMagic.Scene({
 		triggerElement: ("#disc_head"),
-		triggerHook: 0.6
+		triggerHook: 0.6,
+		reverse: false
 
 	});
 
@@ -69,14 +66,15 @@
 			 .add(TweenMax.from("#disc_text", 1, {y: 50, opacity: 0, ease: Sine.easeIn}), "-=0.7");
 
 	scene_1.setTween(scene_1Tl)
-			.addTo(ctrl)
-			.addIndicators();
+			.addTo(ctrl);
+			// .addIndicators();
 
 	//scene 2
 
 	var scene_2 = new ScrollMagic.Scene({
 		triggerElement: ("#brain_head"),
-		triggerHook: 0.6
+		triggerHook: 0.6,
+		reverse: false
 
 	});
 
@@ -85,14 +83,15 @@
 			 .add(TweenMax.from("#brain_text", 1, {y: 50, opacity: 0, ease: Sine.easeIn}), "-=0.7");
 
 	scene_2.setTween(scene_2Tl)
-			.addTo(ctrl)
-			.addIndicators();
+			.addTo(ctrl);
+			// .addIndicators();
 
 	//scene 3
 
 	var scene_3 = new ScrollMagic.Scene({
 		triggerElement: ("#proto_head"),
-		triggerHook: 0.6
+		triggerHook: 0.6,
+		reverse: false
 
 	});
 
@@ -101,13 +100,14 @@
 			 .add(TweenMax.from("#proto_text", 1, {y: 50, opacity: 0, ease: Sine.easeIn}), "-=0.7");
 
 	scene_3.setTween(scene_3Tl)
-			.addTo(ctrl)
-			.addIndicators();
+			.addTo(ctrl);
+			// .addIndicators();
 
 	//scene 4
 	var scene_4 = new ScrollMagic.Scene({
 		triggerElement: ("#content_head"),
-		triggerHook: 0.6
+		triggerHook: 0.6,
+		reverse: false
 
 	});
 
@@ -116,14 +116,15 @@
 			 .add(TweenMax.from("#content_text", 1, {y: 50, opacity: 0, ease: Sine.easeIn}), "-=0.7");
 
 	scene_4.setTween(scene_4Tl)
-			.addTo(ctrl)
-			.addIndicators();
+			.addTo(ctrl);
+			// .addIndicators();
 
 	//scene 5
 
 	var scene_5 = new ScrollMagic.Scene({
 		triggerElement: ("#art_head"),
-		triggerHook: 0.6
+		triggerHook: 0.6,
+		reverse: false
 
 	});
 
@@ -132,14 +133,15 @@
 			 .add(TweenMax.from("#art_text", 1, {y: 50, opacity: 0, ease: Sine.easeIn}), "-=0.7");
 
 	scene_5.setTween(scene_5Tl)
-			.addTo(ctrl)
-			.addIndicators();
+			.addTo(ctrl);
+			// .addIndicators();
 
 	//scene 6
 
 	var scene_6 = new ScrollMagic.Scene({
 		triggerElement: ("#code_head"),
-		triggerHook: 0.6
+		triggerHook: 0.6,
+		reverse: false
 
 	});
 
@@ -155,8 +157,8 @@
 			 
 
 	scene_6.setTween(scene_6Tl)
-			.addTo(ctrl)
-			.addIndicators();
+			.addTo(ctrl);
+			// .addIndicators();
 
 
 
@@ -164,8 +166,8 @@
 
 	var scene_7 = new ScrollMagic.Scene({
 		triggerElement: ("#test_head"),
-		triggerHook: 0.6
-
+		triggerHook: 0.6,
+		reverse: false
 	});
 
 	var scene_7Tl = new TimelineMax();
@@ -183,42 +185,56 @@
 				  ease: Sine.easeInOut
 				  },
 				  {opacity: 1,
-				  y: -3900    }
-			));
+				  y: -3900    }))
+			 .add(TweenMax.to("#plane", 1, { bezier:{
+				    type: "soft",
+				    values:[{x:1020, y:30}, {x: 1400, y: 30}],
+				    repeat: -1
+				  }
+				}));
 
 	scene_7.setTween(scene_7Tl)
-			.addTo(ctrl)
-			.addIndicators();
+			.addTo(ctrl);
+			// .addIndicators();
 
 	//scene 8
 
 	var scene_8 = new ScrollMagic.Scene({
 		triggerElement: ("#del_head"),
-		triggerHook: 0.6
+		triggerHook: 0.6,
+		reverse: false
 
 	});
 
 	var scene_8Tl = new TimelineMax();
 	scene_8Tl.add(TweenMax.from("#del_head", 1, {y: 50, opacity: 0, ease: Sine.easeIn}))
 			 .add(TweenMax.from("#del_text", 1, {y: 50, opacity: 0, ease: Sine.easeIn}), "-=0.7")
-			 .add(TweenMax.to("#plane", 1, { bezier:{
-				    type: "soft",
-				    values:[{x:1020, y:30}, {x: 1400, y: 30}],
-				    repeat: -1
+			 .add(TweenMax.fromTo("#plane2", 0.3, {opacity: 0, x:-70}, {opacity:1, x:0}))
+			 .add(TweenMax.to("#plane2", 1, { bezier:{
+				    type: "thru",
+				    values:[{x:410, y:2},{x: 420, y: 10},{x: 430, y: 15},{x: 440, y: 20},{x: 450, y: 30}],
+				    repeat: -1,
+				    autoRotate: true,
+				    curviness: 1
 				  }
 				}))
-			 .add(TweenMax.to("#plane", 1, { bezier:{
-				    type: "soft",
-				    values:[{x:1400, y:30}, {x: 1600, y: 50}, {x: 1800, y: 30}],
-				    repeat: -1
-				  }
-				}));
+			 .add("plane2_anim")
+			 .add(TweenMax.to("#plane2", 0.2, {opacity:0}), "plane2_anim-=0.27");
+			 
 
 	scene_8.setTween(scene_8Tl)
-			.addTo(ctrl)
-			.addIndicators();
+			.addTo(ctrl);
+			// .addIndicators();
 
 })();
+
+
+
+
+
+
+
+
 // }
 
 // else {
