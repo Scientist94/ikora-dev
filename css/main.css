@@ -1792,23 +1792,23 @@ object {
 
     .info .scene-heading {
         color: #7b4b1e;
-        font-size: 2.3em;
+        font-size: 2.6em;
     }
 
     .info .scene-desc {
         color: #7b4b1e;
-        font-size: 1.4em;
+        font-size: 1.8em;
     }
 
    .info {
-        flex: 0 0 768px;
+        flex: 0 0 1408px;
     }
 
     .info .info-svg {
         position: absolute;
         bottom: 0;
-        height: 432px;
-        width: 768px;
+        height: 792px;
+        width: 1408px;
 
     }
 
@@ -1875,14 +1875,14 @@ object {
     }
 
    .info {
-        flex: 0 0 896px;
+        flex: 0 0 1152px;
     }
 
     .info .info-svg {
         position: absolute;
         bottom: 0;
-        height: 504px;
-        width: 896px;
+        height: 648px;
+        width: 1152px;
 
     }
 
@@ -2033,7 +2033,7 @@ object {
     }
 
     .info .scene-wrap {
-        padding-top: 12%;
+        padding-top: 10%;
         height: 100%;
         position: relative;
     }
@@ -2071,22 +2071,125 @@ object {
         color: #7b4b1e;
         font-size: 0.9em;
     }
+
+    
     
     .info {
-        flex: 0 0 416px;
+        flex: 0 0 640px;
     }
 
     .info .info-svg {
         position: absolute;
         bottom: 0;
-        height: 234px;
-        width: 416px;
+        height: 360px;
+        width: 640px;
 
     }
 
 }
 
 @media only screen and (max-width: 480px) and (orientation:landscape) {
+
+    .vision-wrap {
+        display: none;
+    }
+
+    .vision-landscape {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .landscape-text {
+        align-self: center;
+    }
+
+    .landscape-text h2 {
+        font-size: 3vw;
+        font-family: 'Raleway', sans-serif;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    .vision-intro-text h1 {
+        font-size: 6.1vw;
+    }
+
+    .scroll-container {
+        bottom: -20%;
+    }
+
+    .scroll-text {
+        font-size: 0.7em;
+    }
+
+    .scroll-arrow {
+        height: 48px;
+        width: 48px;
+        left: 55%;
+    }
+
+    .info .scene-wrap {
+        padding-top: 10%;
+        height: 100%;
+        position: relative;
+    }
+
+    .info .scene-text {
+
+        position: relative;
+        z-index: 3;
+        padding-top: 40px;
+        font-family: 'Josefin Sans', sans-serif;
+        width: 85%;
+        margin-left: 15%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info .scene-text .text {
+        flex: 0 0 75%;
+    }
+
+    .info .scene-text .text1 {
+        flex: 0 0 48%;
+    }
+
+    .info .scene-text .text2 {
+        flex: 0 0 48%;
+    }
+
+    .info .scene-heading {
+        color: #7b4b1e;
+        font-size: 1.3em;
+    }
+
+    .info .scene-desc {
+        color: #7b4b1e;
+        font-size: 0.9em;
+    }
+
+    
+    
+    .info {
+        flex: 0 0 512px;
+    }
+
+    .info .info-svg {
+        position: absolute;
+        bottom: 0;
+        height: 288px;
+        width: 512px;
+
+    }
+
+}
+
+@media only screen and (max-width: 360px) and (orientation:landscape) {
 
     .vision-wrap {
         display: none;
@@ -2196,12 +2299,12 @@ option {
 
 .nl-form .select-1 {
     padding-left: 2px;
-    
+    background-color: #f86666;
     text-align: center;
 }
 
 .nl-form .select-2 {
-    
+    background-color: #f86666;
     text-align: center;
 }
 
@@ -2470,17 +2573,17 @@ option {
 
 }
 
-@media only screen and (max-width: 359px) {
+@media only screen and (max-width: 480px) {
     
     .contact-wrap {
-        padding: 29vw 0 8vw 0;
+        padding: 26vw 0 8vw 0;
         
     }
 
     .nl-form {    
         width: 95%;
         margin: 0 auto;
-        font-size: 3.6vw;
+        font-size: 4.7vw;
        
         font-family: 'Raleway', sans-serif;
         line-height: 1.5;
@@ -2494,7 +2597,40 @@ option {
         margin: 0 auto;
         font-family: 'Raleway', sans-serif;
         text-align: center;
-        font-size: 1.9vw;
+        font-size: 2.6vw;
+    }
+
+    .contact-social {
+        width: 340px;
+    }
+
+}
+
+@media only screen and (max-width: 359px) {
+    
+    .contact-wrap {
+        padding: 29vw 0 8vw 0;
+        
+    }
+
+    .nl-form {    
+        width: 95%;
+        margin: 0 auto;
+        font-size: 4.6vw;
+       
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.5;
+        color: #7d786f;
+        text-align: center;
+    }
+
+    .mail-text {
+        padding-top: 3%;
+        width: 75%;
+        margin: 0 auto;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        font-size: 2.5vw;
     }
     
     .contact-social {
